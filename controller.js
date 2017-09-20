@@ -7,7 +7,7 @@ app.controller('myCtrl', function($scope) {
 	
 	$scope.questions = [
 		{ question:'Do you think you are having a girl?', indicator: 'G' },
-		{ question:'Do you think you are having a boy?', indicator: 'B' },
+		{ question:'Have you been experiencing heartburn?', indicator: 'G' },
 		{ question:'Have you had increased acne since being pregnant?', indicator: 'G' },
 		{ question:'Is your age plus the year of conception an even number?', indicator: 'G' },
 		{ question:"Was baby's heartbeat < 140 bpm?", indicator: 'B' },
@@ -21,7 +21,14 @@ app.controller('myCtrl', function($scope) {
 		{ question:'Have you become more of a klutz recently?', indicator: 'B' },
 		{ question:'Is your skin drier than usual?', indicator: 'B' },	
 		{ question:'Have your feet been unreasonably cold?', indicator: 'B' },
-		{ question:'Have you suffered from headaches recently?', indicator: 'B' },		
+		{ question:'Have you suffered from headaches recently?', indicator: 'B' },	
+		{ question:'Has your hair become more luxurious of late?', indicator: 'B' },	
+		{ question:'Have you had red highlights creeping into your normal hair color?', indicator: 'G' },	
+		{ question:'Have you been sleeping on your left side?', indicator: 'B' },	
+		{ question:'Is your belly more basketball shaped than watermelon?', indicator: 'B' },	
+		{ question:'Have you suddenly become more conscious of your nose?', indicator: 'B' },	
+		{ question:'Tie a ring on a string and hang it over your belly. Does it sway in a circle? (As opposed to side-to-side)', indicator: 'G' },	
+		{ question:'Have your legs gotten bigger?', indicator: 'B' },	
 	]
 
 	$scope.qIndex = 0;
