@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="controller.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+	<h1>Baby Reveal</h1>
+	<br />
+	
+	<div ng-if="!isRevealed">
+		<h3>{{currentQuestion.question}}</h3>
+		<form name="myForm">
+		  <label>
+			<input type="radio" ng-model="response" value="1">
+			True
+		  </label>
+		  <label>
+			<input type="radio" ng-model="response" value="-1">
+			False
+		  </label>
+		  <label>
+			<input type="radio" ng-model="response" value="0">
+			Don't Know
+		  </label>
+		  <br/>
+		  <input type="button" ng-click="answerQuestion(response)" value="Submit" />
+		 </form>
+	</div>
+	<div ng-if="isRevealed">
+		<h1 ng-style="gender.color">{{gender.announcement}}</h1>
+	</div>
+	 <p>
+		 Girl: {{girlPoints}}
+		 Boy: {{boyPoints}}
+		 Response: {{response}}
+	 </p>
+</div>
+
+</body>
+<style>
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+</html>
